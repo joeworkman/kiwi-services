@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>Image File</key>
+			<string>kiwi.png</string>
+			<key>Regular Expression</key>
+			<string>(?s)^.{1,300}$</string>
+			<key>Script Interpreter</key>
+			<string>/usr/bin/ruby</string>
+			<key>Shell Script File</key>
+			<string>post.rb</string>
+			<key>Title</key>
+			<string>Kiwi Compose Post</string>
+		</dict>
+	</array>
+	<key>Apps</key>
+	<array>
+		<dict>
+			<key>Bundle Identifier</key>
+			<string>com.yourhead.kiwi</string>
+			<key>Check Installed</key>
+			<true/>
+			<key>Link</key>
+			<string>http://kiwi-app.net</string>
+			<key>Name</key>
+			<string>Kiwi</string>
+		</dict>
+	</array>
+	<key>Credits</key>
+	<dict>
+		<key>Link</key>
+		<string>http://joeworkman.net</string>
+		<key>Name</key>
+		<string>Joe Workman</string>
+	</dict>
+	<key>Extension Description</key>
+	<string>Compose a new post using Kiwi.</string>
+	<key>Extension Identifier</key>
+	<string>com.joeworkman.popclip.kiwi</string>
+	<key>Extension Image File</key>
+	<string>kiwi.png</string>
+	<key>Extension Name</key>
+	<string>Kiwi</string>
+	<key>Version</key>
+	<real>1</real>
+</dict>
+</plist>

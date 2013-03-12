@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Joe Workman</string>
+	<key>Builder Version</key>
+	<string>8536.26.17</string>
+	<key>CFBundleDisplayName</key>
+	<string>Kiwi</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.joeworkman.safari.kiwi</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>100</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Context Menu Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>postWithKiwi</string>
+				<key>Identifier</key>
+				<string>kiwi.menu.text</string>
+				<key>Title</key>
+				<string>Kiwi - Compose Post</string>
+			</dict>
+		</array>
+		<key>Global Page</key>
+		<string>global.html</string>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>postWithKiwi</string>
+				<key>Identifier</key>
+				<string>kiwi.toolbar</string>
+				<key>Image</key>
+				<string>images/toolbar.png</string>
+				<key>Label</key>
+				<string>Kiwi Post</string>
+				<key>Palette Label</key>
+				<string>Compose Post with Kiwi...</string>
+				<key>Tool Tip</key>
+				<string>Post selected text or webpage page title into Kiwi</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>inject.js</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>Post your favorite web content into Kiwi.app (http://kiwi-app.net)</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+	<key>Update Manifest URL</key>
+	<string>http://dl.dropbox.com/u/292982/SafariExtenstions/Kiwi/Kiwi.plist</string>
+	<key>Website</key>
+	<string>http://joeworkman.net</string>
+</dict>
+</plist>

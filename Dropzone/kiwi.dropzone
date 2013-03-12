@@ -1,0 +1,29 @@
+# Dropzone Destination Info
+# Name: Kiwi
+# Description: Compose posts with text and images to App.net with Kiwi.app
+# Handles: NSStringPboardType, NSFilenamesPboardType
+# Events: Clicked, Dragged
+# Creator: Joe Workman 
+# URL: http://joeworkman.net
+# IconURL: http://jwurl.net/161aHW5
+
+def dragged
+
+  case ENV['DRAGGED_TYPE']
+
+    when 'NSFilenamesPboardType'
+      $items.delete_if {|x| !x.downcase.match(/(png|jpg|gif|jpeg)$/) }
+      kiwi_post_params = 'image=' + $items.join('&image=')
+
+    when 'NSStringPboardType'
+      kiwi_post_params = 'text=' + $items[0]
+      
+  end
+
+  system("open 'kiwi://post?#{kiwi_post_params}'")
+end
+
+def clicked
+  pboard = IO.popen('pbpaste') {|clipboard| clipboard.read}
+  system("open 'kiwi://post?text=#{pboard.chomp}'")
+end
