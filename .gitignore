@@ -1,3 +1,6 @@
+# Files for codesigning the OS X Services. 
+services_codesign_commands.txt
+
 # osx noise
 .DS_Store
 profile
