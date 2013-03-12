@@ -1,12 +1,17 @@
-# Kiwi Services
+# Kiwi Services for Mac OS X
 
-![Kiwi for App.net](Kiwi-128.png)
+Services are apart of the core functionality of Mac OS X. They let you trigger automations from almost any contextual menu throughout the operating system. The services that are displayed are even customized based on the object that you have selected to run you service on. For more information about OS X services, check out this article by [Macworld](http://www.macworld.com/article/1163996/how_to_use_services_in_mac_os_x.html). 
 
-[Kiwi](http://kiwi-app.net) is an awesome application that allows you to access [App.net](http://app.net) from Mac OS X. Its an extremely eye catching and powerful app. All the integrations in this repository are a sample of how powerful Kiwi can be. 
+The following services are available to you here in the `OSXServices` folder. 
 
-The integrations and plugins within this repo will allow you to fully integrate [Kiwi](http://kiwi-app.net) into your daily life. There are integrations at the OS level with services as well as most of the popular 3rd party automation tools out there for the Mac. 
+* **Kiwi - Compose Post**: When you select text in any application you can access this service. A new post with Kiwi will be opened with the text that you had selected. 
 
-Have a look at the individual documentation for each of the available services. 
+* **Kiwi - Post Image**: When you have an image (or multiple images) selected, this service will become available. Kiwi will take the images and upload them to the cloud. It will then compose a new post where the urls to the uploaded images will be inserted once their uploads complete. 
+* **Kiwi - Post Now**: This service is similar to the *Compose Post* service. When you select text in any application you can access this service. However, a post with the selected text will be sent directly to App.net without giving you the option to edit the post first in Kiwi.  
 
-* OS X Services* Safari Extension
-* Chrome Extension (coming soon)* Alfred v1.x* Alfred v2.x* Dropzone* Launchbar* PopClip* Quicksilver
+## Installation
+
+The installation of system services is pretty simple. There are two options available. 
+
+1. Double click on the *.workflow* files and you will be prompted to install the service. Done. 
+2. To manually install the services, you will need to copy the *.workflow* files into **<Home>/Library/Services**. 
