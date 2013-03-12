@@ -8,5 +8,5 @@ The integrations and plugins within this repo will allow you to fully integrate 
 
 Have a look at the individual documentation for each of the available services. 
 
-* [OS X Services](OSXServices/README.md)* Safari Extension
+* OS X Services* Safari Extension
 * Chrome Extension (coming soon)* Alfred v1.x* Alfred v2.x* Dropzone* Launchbar* PopClip* Quicksilver
