@@ -23,3 +23,5 @@ When you right click on a webpage, there are 3 ways that you can post to Kiwi.
 ## Installation
 
 To install the Kiwi extension into Safari, simply double click on the `Kiwi.safariextz` file and choose install when prompted.  
+
+Tip: After you install the Kiwi extension, it will not work on any existing webpages that are open until you refresh them. 
