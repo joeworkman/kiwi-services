@@ -21,3 +21,7 @@ Have a look at the individual documentation for each of the available services.
 ## Installation
 
 Simply download the zip of this repository (or clone the repo for my fellow geeks) to your machine and follow the instructions for each individual service. 
+
+## Requirements
+
+Simply make sure that you are running the latest Kiwi goodness. Its recommended that you have at least version **v3.03**. 
