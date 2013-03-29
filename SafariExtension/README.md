@@ -9,7 +9,7 @@ When you click on the Kiwi button on the menu bar, a new post will be created in
 * **When text is selected**, the content of the post created in Kiwi will contain that selected text along with the url to the webpage. 
 * **When nothing is selected**, the content of the post created in Kiwi will contain the browser title along with the url to the webpage. 
 
-**Tip**: You can also use the keyboard shortcut shift-cmd-P to trigger the Kiwi extension as well. 
+**Tip**: You can also use the keyboard shortcut shift-ctrl-P to trigger the Kiwi extension as well. 
 
 ## Contextual Menu
 

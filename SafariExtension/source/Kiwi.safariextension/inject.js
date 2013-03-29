@@ -1,5 +1,5 @@
 var kiwiShiftDown = false, kiwiCmdDown = false;
-var shiftKey = 16, cmdKey = 91, pKey = 80;
+var shiftKey = 16, ctrlKey = 17, pKey = 80;
 
 function handleMessage(event) {	
 	// console.log('Inject: handleMessage')
@@ -53,13 +53,13 @@ function getPostKiwiData(event) {
 }
 
 function listenKeyUp(key) {
-    if (key.keyCode === shiftKey) { kiwiShiftDown = false }
-    if (key.keyCode === cmdKey)   { kiwiCmdDown   = false }
+    if (key.keyCode == shiftKey) { kiwiShiftDown = false }
+    if (key.keyCode == ctrlKey)  { kiwiCmdDown   = false }
 }
 
 function listenKeyDown(key) {
-    if (key.keyCode === shiftKey) { kiwiShiftDown = true }
-    if (key.keyCode === cmdKey)   { kiwiCmdDown   = true }
+    if (key.keyCode == shiftKey) { kiwiShiftDown = true }
+    if (key.keyCode == ctrlKey)   { kiwiCmdDown   = true }
 
 	if ((kiwiShiftDown && kiwiCmdDown) && key.keyCode === pKey) {
 		safari.self.tab.dispatchMessage('kiwiPostText',true)

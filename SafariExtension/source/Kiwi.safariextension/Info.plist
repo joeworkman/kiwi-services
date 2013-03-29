@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Joe Workman</string>
 	<key>Builder Version</key>
-	<string>8536.26.17</string>
+	<string>8536.28.10</string>
 	<key>CFBundleDisplayName</key>
 	<string>Kiwi</string>
 	<key>CFBundleIdentifier</key>
@@ -13,9 +13,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.0</string>
+	<string>1.0.1</string>
 	<key>CFBundleVersion</key>
-	<string>100</string>
+	<string>101</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Context Menu Items</key>
@@ -74,7 +74,7 @@
 		</dict>
 	</dict>
 	<key>Update Manifest URL</key>
-	<string>http://dl.dropbox.com/u/292982/SafariExtenstions/Kiwi/Kiwi.plist</string>
+	<string>https://dl.dropbox.com/u/292982/SafariExtensions/Kiwi/Kiwi.plist</string>
 	<key>Website</key>
 	<string>http://joeworkman.net</string>
 </dict>
