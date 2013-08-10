@@ -37,6 +37,7 @@ function performCommand (event) {
 function kiwiPostText(event) {
 	kiwiSettings.pageURL = safari.application.activeBrowserWindow.activeTab.url;
 	kiwiSettings.title = safari.application.activeBrowserWindow.activeTab.title;
+	kiwiSettings.useMarkdown = safari.extension.settings.markdown;
 	safari.application.activeBrowserWindow.activeTab.page.dispatchMessage("getPostKiwiData", kiwiSettings);
 	kiwiSettings = new Object();
 }
@@ -44,6 +45,7 @@ function kiwiPostText(event) {
 function kiwiImagePost(event) {
 	kiwiSettings.image = event.userInfo.srcUrl;
 	kiwiSettings.info = event.userInfo;
+	kiwiSettings.useMarkdown = safari.extension.settings.markdown;
 	safari.application.activeBrowserWindow.activeTab.page.dispatchMessage("getPostKiwiData", kiwiSettings);
 	kiwiSettings = new Object();
 }
@@ -51,6 +53,7 @@ function kiwiImagePost(event) {
 function kiwiLinkPost(event) {
 	kiwiSettings.pageURL = event.userInfo.url;
 	kiwiSettings.title = 'link';
+	kiwiSettings.useMarkdown = safari.extension.settings.markdown;
 	safari.application.activeBrowserWindow.activeTab.page.dispatchMessage("getPostKiwiData", kiwiSettings);
 	kiwiSettings = new Object();
 }
