@@ -42,8 +42,13 @@ function getPostKiwiData(event) {
 	    var selectedText = document.getSelection().toString()
 	    // console.log('Got Selected Text: '+ selectedText)
 		
-		postText = selectedText == '' ? title : selectedText
-		postText += ' ' + pageURL 
+		if (settings.useMarkdown) {
+			postText = '[' + ( selectedText == '' ? title : selectedText ) + ']' 
+			postText += '(' + pageURL + ')' 
+		} else {
+			postText = selectedText == '' ? title : selectedText 
+			postText += ' ' + pageURL 
+		}
 	}
 
 	var postUrl = 'kiwi://post?text='+ encodeURIComponent( postText )
